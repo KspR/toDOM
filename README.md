@@ -1,5 +1,5 @@
 ## toDOM : fast, light and simple JavaScript DOM generator
----------------------------------------------------------
+----------------------------------------------------------
 toDOM is a simple library allowing you to generate DOM element on the fly with JavaScript, using a straightforward JSON input.
 
 It is designed to be fast and flexible. You can build any DOM element you want using toDOM.
@@ -159,4 +159,4 @@ There is also a sand.js version of toDOM, which is exactly the same except it us
 
 ### Authors 
 * [Sam Ton That](https://github.com/KspR)
-* [Pierre Cole](https://github.com/piercus)
+* [Pierre Colle](https://github.com/piercus)
