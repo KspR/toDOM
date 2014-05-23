@@ -14,11 +14,7 @@ You might want to use it when you make a lot of (costly) DOM operations, like :
 Since you build your elements directly from your JavaScript code, you don't have to make any additional DOM call in order to get a handle of them. It will result in a boost in performance and will make your life a lot easier when you have complex elements to build on the fly.
 
 ## Installing toDOM
-Just include toDOM.js somewhere in your < body > and you are ready to go!
-
-```html
-<script src="http://raw.githubusercontent.com/KspR/toDOM/master/toDOM.min.js"></script>
-```
+Just include toDOM.min.js or toDOM.js somewhere in your < body > and you are ready to go!
 
 ## Usage
 ### Basic
@@ -43,8 +39,7 @@ This will result in :
 
 ### Keeping references
 ``` javascript
-var scope = {}; // most of the time you will use this instead of an object here, if you are into Oriented Object Programming
-// ... if not you really should be :)
+var scope = {};
 
 document.body.appendChild(
   toDOM({
