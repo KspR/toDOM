@@ -1,23 +1,23 @@
-# toDOM : fast, light and simple JavaScript DOM generator
+## toDOM : fast, light and simple JavaScript DOM generator
 ---------------------------------------------------------
 toDOM is a simple library allowing you to generate DOM element on the fly with JavaScript, using a straightforward JSON input.
 
 It is designed to be fast and flexible. You can build any DOM element you want using toDOM.
 
-## When to use?
+### When to use?
 You might want to use it when you make a lot of (costly) DOM operations, like :
 * adding / removing elements from the document ;
 * handling events (clicks, mouseups, mousemoves, ...) ;
 * interacting with elements (change of style, change of content, ...).
 
-## Why use it?
+### Why use it?
 Since you build your elements directly from your JavaScript code, you don't have to make any additional DOM call in order to get a handle of them. It will result in a boost in performance and will make your life a lot easier when you have complex elements to build on the fly.
 
-## Installing toDOM
+### Installing toDOM
 Just include toDOM.min.js or toDOM.js somewhere in your < body > and you are ready to go!
 
-## Usage
-### Basic
+### Usage
+#### Basic
 ```javascript
 var element = toDOM({
   tag : 'div',
@@ -37,7 +37,7 @@ This will result in :
 </body>
 ```
 
-### Keeping references
+#### Keeping references
 ``` javascript
 var scope = {};
 
@@ -52,7 +52,7 @@ scope.myReference; // is a reference to the created element
 scope.myReference.innerHTML = 'Hello World!';
 ```
 
-### Setting attributes
+#### Setting attributes
 ```javascript
 document.body.appendChild(
     toDOM({
@@ -66,7 +66,7 @@ document.body.appendChild(
 );
 ```
 
-### Adding style
+#### Adding style
 ```javascript
 document.body.appendChild(
     toDOM({
@@ -81,7 +81,7 @@ document.body.appendChild(
 ```
 You might have seen that I haven't given any tag this time. It's OK, trust me... by default the tag is set to "div".
 
-### Adding events
+#### Adding events
 ```javascript
 document.body.appendChild(
     toDOM({
@@ -99,7 +99,7 @@ document.body.appendChild(
 );
 ```
 
-### With children
+#### With children
 toDOM is actually recursive! So you can use it like this :
 ```javascript
 var scope = {};
@@ -132,7 +132,7 @@ setTimeout(function() {
 }.bind(this), 2000);
 ```
 
-### Shortcuts
+#### Shortcuts
 One of toDOM's purpose is to help you write less code without losing readability. It exposes some shortcuts to avoid the loss of being too explicit. You can set classes and ids without using the "attr" key :
 
 ```javascript
@@ -151,12 +151,12 @@ document.body.appendChild(
 );
 ```
 
-## sandjs version
+### sandjs version
 There is also a sand.js version of toDOM, which is exactly the same except it uses the [sand.js](https://github.com/KspR/sandjs) module manager, so that it is properly defined and usable as a module (it's the right way to use it if you are building a big app).
 
-## Who uses toDOM?
+### Who uses toDOM?
 * [Whibo](http://whibo.com) (collaborative real-time whiteboard)
 
-## Authors 
+### Authors 
 * [Sam Ton That](https://github.com/KspR)
 * [Pierre Cole](https://github.com/piercus)
