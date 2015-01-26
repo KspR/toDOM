@@ -22,7 +22,7 @@
       
       split = firstPart.split(/\.|#/);
 
-      parse.tag = split.shift() || 'div'; // defaults to div
+      parse.tag = split.shift() || 'div'; // defaults to div
       if (split.length) {
         parse.attr = obj.attr || {};
 
