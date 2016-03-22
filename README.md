@@ -155,7 +155,7 @@ document.body.appendChild(
 There is also a sand.js version of toDOM, which is exactly the same except it uses the [sand.js](https://github.com/KspR/sandjs) module manager, so that it is properly defined and usable as a module (it's the right way to use it if you are building a big app).
 
 ### Who uses toDOM?
-* [Whibo](http://whibo.com) (collaborative real-time whiteboard)
+* [wallDraft](http://walldraft.com) (collaborative real-time whiteboard)
 
 ### Authors 
 * [Sam Ton That](https://github.com/KspR)
